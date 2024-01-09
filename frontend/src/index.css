@@ -1,0 +1,163 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #00ABE1;
+  font-family: 'Lilita One', cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home{
+  background-color: #00ABE1;
+  color: white;
+}
+
+.loading{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mainav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.5rem;
+  height: 10vh;
+  background-color:#00ABE1;
+  color: black;
+  position: sticky;
+  top: 0;
+}
+
+.mainav a{
+  margin: 10px;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.mainav h1{
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+
+.banner{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #00ABE1;
+}
+
+
+.banner h1{
+  font-size: 6rem;
+  letter-spacing: 0.3rem;
+}
+
+.banner p{
+  font-size: 2rem;
+}
+
+
+.banner a{
+  font-size: 2rem;
+  padding: 10px 40px;
+  text-decoration: none;
+  margin: 30px;
+  color: white;
+  background-color: #161F6D;
+  border-radius: 40px;
+}
+
+
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-top: 4px solid white;
+  color: black;
+  margin: 40px;
+  margin-top: 0px;
+  padding: 100px;
+}
+
+main *{
+  margin: 5px;
+}
+
+main h1{
+  font-size: 2rem;
+}
+
+main p{
+  font-size: 1.5rem;
+  color: gray;
+}
+
+main a{
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+footer{
+  background-color:azure;
+  color: black;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main2 *{
+  margin: 10px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.cancel:hover{
+  cursor: pointer;
+}
+
+.auth-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}

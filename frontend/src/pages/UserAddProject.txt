@@ -1,0 +1,142 @@
+import "../styles/addproject.css";
+import { useState } from "react";
+import { useAddProject } from "../hooks/useAddProject";
+
+const UserAddProjectPage = () => {
+  const { addProject } = useAddProject();
+
+  const [photo, setPhoto] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [description, setDescription] = useState<string>("");
+  const [repo, setRepo] = useState<string>("");
+  const [demo, setDemo] = useState<string>("");
+  const [type, setType] = useState<string>("");
+  const [lib, setLib] = useState<string>("");
+  const [lang, setLang] = useState<string>("");
+  const [db, setDb] = useState<string>("");
+  const [css, setCss] = useState<string>("");
+  const [hosting, setHosting] = useState<string>("")
+  const [technologies, setTechnologies] = useState<string[]>([]);
+  const [selectedImage, setSelectedImage] = useState();
+
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    console.log(technologies)
+    addProject(
+      photo,
+      name,
+      description,
+      repo,
+      demo,
+      technologies,
+      type
+    );
+  };
+
+  const [list, setList] = useState<string[]>([
+    "html","ruby", "golang", "css", "javascript", "typescript", "node", "python", "ruby", "c#","scss","java", "php",
+    "react", "vue", "angular", "nuxt", "next", "svelte", "webcomponents", "expressjs", "django"
+  ]);
+
+  const [tech, setTech] = useState<string>("");
+
+  const addTech = (e: any) => {
+    e.preventDefault();
+    setTechnologies((prev) => [tech, ...prev]);
+    setTech("");
+  };
+
+  const addTech2 = (tech: string) => {
+    setTechnologies((prev) => [tech, ...prev]);
+    setTech("");
+  };
+
+  return (
+    <div className="addproject">
+      <h1>ADD PROJECT</h1>
+      <div className="photoupload">
+        <h1>add picture</h1>
+        <form>
+        {
+                selectedImage ?             <img
+                src={URL.createObjectURL(selectedImage)}
+                height={200}
+                width={200}
+                alt="Thumb"
+              />
+              :
+              ''
+  }
+          <input
+            id="photoinput"
+            name="photo"
+            onChange={(e: any) => {setPhoto(e.target.files[0]);;    setSelectedImage(e.target.files[0])}}
+            type="file"
+          />
+        </form>
+      </div>
+      <div className="description">
+        <h1>description </h1>
+        <textarea
+          onChange={(e: any) => setDescription(e.target.value)}
+          value={description}
+        ></textarea>
+      </div>
+      <div>
+        <h1>add details</h1>
+        <form>
+        {technologies.map((tech) => (
+        <p>{tech}</p>
+      ))}
+      <div className='con'>
+        <input
+          type="text"
+          value={tech}
+          onChange={(e) => setTech(e.target.value)}
+          placeholder="tech"
+        />
+                    <button onClick={addTech}>add tech</button>
+
+        <div className="bx">
+        {
+          tech !== '' ?(
+          list.map((item) =>{
+            if(item.includes(tech)){
+              return <div className="item" onClick={() => addTech2(item)}>{item}</div>
+            }else{
+              return
+            }
+          }
+          )
+          )
+          :
+          null
+        }
+        </div>
+      </div>
+          <input
+            type="text"
+            onChange={(e: any) => setName(e.target.value)}
+            value={name}
+            placeholder="name"
+          />
+          <input
+            type="text"
+            placeholder="url"
+            value={demo}
+            onChange={(e: any) => setDemo(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="repo"
+            value={repo}
+            onChange={(e: any) => setRepo(e.target.value)}
+          />
+        </form>
+      </div>
+      <button onClick={handleClick}>create portfolio</button>
+    </div>
+  );
+};
+
+export default UserAddProjectPage;

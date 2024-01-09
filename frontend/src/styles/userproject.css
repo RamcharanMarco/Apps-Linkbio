@@ -1,0 +1,44 @@
+.userProjectPage .project{
+    background-color: green;
+    min-height: 88vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.userProjectPage{
+    background-color: azure;
+}
+
+.userProjectPage .project div{
+    display: flex;
+    flex-direction: column;
+}
+
+.userProjectPage .project div img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.userProjectPage .projectnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.userProjectPage .projectnav *{
+    margin: 10px;
+}
+
+.userProjectPage .project input, .userProjectPage .project select, .userProjectPage button{
+    width: 300px;
+    height: 35px;
+}
+
+.edit-box{
+    background-color: burlywood;
+    margin: 10px;
+}

@@ -1,0 +1,100 @@
+.settings {
+  min-height: 90vh;
+  background-color: #8db600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings p{
+    color: grey;
+}
+
+.settings form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings form input,
+.settings form select,
+.settings form button {
+  height: 35px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: azure;
+}
+
+.settings .danger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings img {
+  height: 300px;
+  width: 300px;
+  margin: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.settings .photo,
+.settings .details,
+.settings .danger {
+margin: 40px 0px;
+}
+
+.settings .photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings .details div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.settings .details h1{
+    margin: 15px;
+  }
+
+.settings .details div *{
+    margin: 5px;
+  }
+
+.settings .details div button {
+  width: 90px;
+  font-size: 1.5rem;
+}
+
+.settings .danger div {
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 20px;
+}
+
+.settings .danger div *{
+    margin: 6px;
+}
+
+.settings .danger button {
+  height: 35px;
+  width: 300px;
+  background-color: azure;
+  border: 1px solid black;
+  outline: none;
+}

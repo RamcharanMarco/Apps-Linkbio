@@ -1,0 +1,80 @@
+.addproject{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.photoupload{
+    display: flex;
+    flex-direction: column;
+}
+
+.photoupload form{
+    display: flex;
+}
+
+.photoupload form input{
+    width: 300px;
+}
+
+.addproject form{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addproject input, select{
+    width: 400px;
+    height: 35px;
+    margin: 6px 0px;
+}
+
+.description{
+    padding: 20px;
+}
+
+.description textarea{
+    width: 600px;
+    height: 300px;
+}
+
+.addProject button{
+    width: 300px;
+    margin: 50px;
+    padding: 15px 23px;
+    margin: 0 auto;
+}
+
+
+.con{
+    display: flex;
+    justify-content: center;
+}
+
+.con input{
+    width: 400px;
+
+}
+
+.con button{
+    width: fit-content;
+}
+
+
+.bx{
+    background-color: brown;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    width: 400px;
+}
+
+.item:hover{
+    background: yellow;
+}

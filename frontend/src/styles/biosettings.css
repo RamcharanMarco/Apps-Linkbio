@@ -1,0 +1,6 @@
+.biosettings{
+    min-height: 90vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}

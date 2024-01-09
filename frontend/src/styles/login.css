@@ -1,0 +1,40 @@
+.login{
+    background-color: #00ABE1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.login h1{
+    margin: 30px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login input{
+    height: 40px;
+    width: 300px; 
+    margin: 7px;
+    outline: none;
+    border: 1px solid #161F6D;
+    padding: 10px;
+    color: black;
+}
+
+.login button{
+    padding: 10px; 
+    margin: 7px;
+    background-color: #161F6D;
+    color: white;
+    border: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}

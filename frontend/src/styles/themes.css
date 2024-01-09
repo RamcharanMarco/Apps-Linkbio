@@ -1,0 +1,8 @@
+.themes{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: chocolate;
+    height: 100%;
+    width: 100%;
+}
